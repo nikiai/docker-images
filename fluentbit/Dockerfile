@@ -1,4 +1,4 @@
-FROM golang:1.13.4 as go-build
+FROM golang:1.16.5 as go-build
 RUN go get github.com/cosmo0920/fluent-bit-go-loki
 RUN go get github.com/aws/amazon-kinesis-firehose-for-fluent-bit
 RUN go get github.com/aws/amazon-cloudwatch-logs-for-fluent-bit
